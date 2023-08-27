@@ -1,21 +1,26 @@
+"use client"
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
-const About = ({props}) => {
+const About = ({ props }) => {
+    const router = useRouter()
+    const navigate = (name) => {
+        router.push(name)
+    }
     return (
         <div>
-            about
-            <Bout></Bout>
-            <Bout></Bout>
-            <Bout></Bout>
+            <h1>About</h1>
+            <button onClick={() => navigate('/')}>Back to home page</button>
+            <br />
+            <br />
+            <Link href='/about/aboutcollege'>About college</Link>
+            <br />
+            <br />
+            <Link href='/about/aboutstudent'>About Student</Link>
         </div>
     );
 };
 
-const Bout = () => {
-    return (
-        <div>
-            about
-        </div>
-    );
-};
+
 
 export default About;
