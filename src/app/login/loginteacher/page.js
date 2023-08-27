@@ -12,7 +12,7 @@ const Loginstudent = () => {
             <h1 className="heading">Login teacher</h1>
             <br />
             <br />
-            <button onClick={() => navigate('/login')}>Back to home page</button>
+            <button onClick={() => navigate('/login')}>Back to login page</button>
         </div>
     );
 };

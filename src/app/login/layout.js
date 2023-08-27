@@ -1,11 +1,16 @@
+'use client'
 import Link from 'next/link';
 import React from 'react';
 import './login.css'
+import { usePathname } from 'next/navigation';
 
 const Loginlayout = ({children}) => {
+    const pathName = usePathname()
+    
     return (
         <div>
-            <ul className='login-menu'>
+            {
+                pathName !== '/login/loginteacher' ?  <ul className='login-menu'>
                 <li>
                     <h4>Login navbar</h4>
                 </li>
@@ -24,7 +29,9 @@ const Loginlayout = ({children}) => {
                         Login Teacher
                     </Link>
                 </li>
-            </ul>
+            </ul> : null
+            }
+           
             {children}
         </div>
     );
