@@ -9,7 +9,7 @@ const Loginstudent = () => {
     }
     return (
         <div>
-            <h1>Login student</h1>
+            <h1 className="heading">Login student</h1>
             <br />
             <br />
             <button onClick={() => navigate('/login')}>Back to home page</button>

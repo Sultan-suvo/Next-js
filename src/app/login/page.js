@@ -10,16 +10,16 @@ const Login = () => {
     }
     return (
         <div>
-            login
+            <h1 className="heading">Login</h1>
             <br />
             <br />
             <button onClick={() => navigate('/')}>Back to home page</button>
             <br />
             <br />
-            <Link href='login/loginstudent'>go to loginstudent</Link>
+            <Link href='/login/loginstudent'>go to loginstudent</Link>
             <br />
             <br />
-            <Link href='login/loginteacher'>go to loginteacher</Link>
+            <Link href='/login/loginteacher'>go to loginteacher</Link>
         </div>
     );
 };

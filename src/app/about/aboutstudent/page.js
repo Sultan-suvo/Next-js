@@ -8,7 +8,7 @@ const Aboutcollege = () => {
     }
     return (
         <div>
-            <h1>About student</h1>
+            <h1 className="heading">About student</h1>
             <button onClick={() => navigate('/about')}>Back to about page</button>
         </div>
     );

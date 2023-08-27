@@ -9,7 +9,7 @@ const About = ({ props }) => {
     }
     return (
         <div>
-            <h1>About</h1>
+            <h1 className="heading">About</h1>
             <button onClick={() => navigate('/')}>Back to home page</button>
             <br />
             <br />
