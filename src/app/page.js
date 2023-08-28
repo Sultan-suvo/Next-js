@@ -10,7 +10,10 @@ export default function Home() {
       <Link href='about'>go to About page</Link>
       <br />
       <br />
-      <Link href='/productlist'>go to product page</Link>
+      <Link href='/productlist'>go to Product page</Link>
+      <br />
+      <br />
+      <Link href='/userlist'>go to User page</Link>
     </main>
   )
 }
