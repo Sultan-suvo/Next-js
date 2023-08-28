@@ -1,5 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react';
+import Button from './product';
 
 const ProductList = () => {
     const [products, setProducts] = useState([])
@@ -19,7 +20,10 @@ const ProductList = () => {
         <div>
             {
                 products.map((product) => (
-                    <h2 key={product.id}> Name : {product.title}</h2>
+                    <div key={product.id}>
+                        <h2> Name : {product.title}</h2>
+                        <Button price={product.price}/>
+                    </div>
                 ))
             }
         </div>
